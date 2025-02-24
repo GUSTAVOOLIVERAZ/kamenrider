@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #000000;
+            color: white;
+        }
+
+        /* Navbar com fundo preto */
+        .navbar.bg-dark {
+            background-color: #000000 !important;
+        }
+
+        /* Cor do texto da navbar */
+        .navbar-dark .navbar-nav .nav-link {
+            color: #f8f9fa; /* Cor branca */
+        }
+
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #f39c12; /* Cor amarela para o hover */
+        }
+
+        /* Logo da navbar */
+        .navbar-brand img {
+            max-height: 44px;
+        }
+
+        /* Estilo da galeria sem fundo cinza */
+        .galeria {
+            padding-top: 120px; /* Aumenta o espaçamento superior para mover o texto para baixo */
+        }
+
+        /* Título da galeria */
+        .galeria h1 {
+            margin-bottom: 20px;
+        }
+
+        .galeria p {
+            margin-bottom: 40px; /* Espaçamento extra abaixo do parágrafo */
+        }
+
+        /* Imagens da galeria se ajustando ao tamanho da tela */
+        .gallery-image {
+            object-fit: cover;
+            height: 300px;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            padding: 40px 0;
+        }
+
+        footer a {
+            color: #f8f9fa;
+        }
+
+        footer a:hover {
+            color: #f39c12;
+        }
+    </style>
+    <title>Kamen Rider Black Sun - Galeria</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logotipo3.webp" alt="Kamen Rider Black Sun" width="100" height="44">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-danger fw-bolder" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-danger fw-bolder" href="historia.html">História</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-danger fw-bolder" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-danger fw-bolder" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Galeria -->
+    <div class="container padding-top galeria">
+        <div class="row text-center">
+            <h1 class="fw-bold text-danger">Galeria de Kamen Rider Black Sun</h1>
+            <p class="lead">Explore as imagens mais emocionantes da série Kamen Rider Black Sun.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <img src="img/background.jpg" class="img-fluid gallery-image" alt="Cena de Kamen Rider Black Sun">
+            </div>
+            <div class="col-md-4">
+                <img src="img/blacksun-art-destacada1.jpg" class="img-fluid gallery-image" alt="Cena de Kamen Rider Black Sun">
+            </div>
+            <div class="col-md-4">
+                <img src="img/kamenriderblacksun-montagem-destacada 3.jpg" class="img-fluid gallery-image" alt="Cena de Kamen Rider Black Sun">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container text-center mt-5">
+        <h2 class="text-danger">Mais Imagens</h2>
+        <div class="row text-white">
+            <div class="col-md-4">Imagem 1</div>
+            <div class="col-md-4">Imagem 2</div>
+            <div class="col-md-4">Imagem 3</div>
+        </div>
+        <nav aria-label="Page navigation example" class="mt-4">
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="rodape">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-md-3 mt-3">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logotipo3.webp" alt="Kamen Rider" width="100" height="44">
+                    </a>
+                    <p class="text-white">Kamen Rider Black Sun - A Lenda continua...</p>
+                </div>
+                <div class="col-md-3 mt-3">
+                    <h3 class="fs-6 ms-3 text-danger">LINKS IMPORTANTES</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link fw-lighter text-white" href="historia.html">A História</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-lighter text-white" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-lighter text-white" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mt-3">
+                    <h3 class="fs-6 ms-3 text-danger">CONTATO</h3>
+                    <p class="fw-lighter text-white">Email: contato@kamenrider.com.br</p>
+                    <p class="fw-lighter text-white">Telefone: (11) 1234-5678</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+</body>
+</html>

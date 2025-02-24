@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <style>
+        /* Garantir que a navbar tenha um fundo preto sólido */
+        .navbar.bg-dark {
+            background-color: #000000 !important; /* Garante o fundo 100% preto */
+        }
+
+        /* Alterar a cor do texto e ícones para garantir contraste */
+        .navbar-dark .navbar-nav .nav-link {
+            color: #f8f9fa; /* Cor branca para o texto */
+        }
+
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #f39c12; /* Cor amarela para o hover (quando o mouse passa por cima) */
+        }
+
+        /* Logo da navbar */
+        .navbar-brand img {
+            max-height: 100px;
+        }
+
+         /* Estilização do cursor personalizado */
+         body {
+            cursor: url('img/ridericon.cur'), auto; /* caminho para a imagem do cursor */
+        }
+
+        /* Cursor personalizado para links e botões */
+        a, button {
+            cursor: url('img/ridericon.cur'), auto; /* cursor diferenciado para interações */
+        }
+
+
+
+
+        /* Estilos adicionais para o carrossel */
+        .carousel-inner img {
+            object-fit: cover; /* Faz as imagens se ajustarem melhor no carrossel */
+            height: 500px; /* Definindo uma altura fixa para as imagens */
+        }
+    </style>
+    <title>Kamen Rider Black Sun</title>
+</head>
+
+<body style='background-color: #000000;'>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logotipo3.webp" alt="Kamen Rider Black Sun" width="250" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-danger fw-bolder" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-danger fw-bolder" href="historia.html">História</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-danger fw-bolder" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-danger fw-bolder" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    Para adicionar o link da API do WhatsApp ao botão "ENTRE EM CONTATO", basta envolver o botão com uma tag `<a>` e definir o link conforme a URL fornecida.
+
+        Aqui está o código atualizado da seção `<!-- Capa -->` com o link do WhatsApp:
+        
+        ```html
+      <!-- Capa --> 
+<div class="capa" style='background-color: #000000;'>
+    <div class="container py-5">
+        <div class="row py-5 mt-5 align-items-center">
+            <div class="col-md-6 p-5 text-white">
+                <h1 class="fw-bold display-1">Kamen Rider Black Sun</h1>
+                <h3 class="fs-5">A luta pela justiça começa!</h3>
+                
+                <!-- Botão WhatsApp -->
+                <a href="https://api.whatsapp.com/send?text=TOKUSATSU-DNA%20Reveals%20Its%20First-Ever%20Ultraman%20Figure%20Heading%20Overseas%20%20https%3A%2F%2Fanimecorner.me%2Fultraman-figure-tokusatsu-dna-international-release%2F" target="_blank">
+                    <button type="button" class="btn btn-outline-danger mt-3">
+                        <i class="bi bi-whatsapp me-2"></i>ENTRE EM CONTATO
+                    </button>
+                </a>
+            </div>
+            
+            <!-- Capa com link para novo vídeo do YouTube -->
+            <div class="col-md-6 py-5 mt-4">
+                <a href="https://www.youtube.com/embed/PvWULkPPeGU" target="_blank">
+                    <img src="img/background.jpg" class="img-fluid" alt="Kamen Rider Black Sun" width="500" height="500">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+        ```
+        
+        ### Explicação:
+        - A tag `<a>` envolve o botão e possui o link da API do WhatsApp como valor do atributo `href`.
+        - `target="_blank"` abre o link em uma nova aba.
+          
+        Agora, ao clicar no botão "ENTRE EM CONTATO", o usuário será direcionado ao WhatsApp com a mensagem predefinida.
+
+
+    <div class="container mt-5">
+        <h2 class="text-danger">Mais sobre Kamen Rider Black Sun</h2>
+        <p class="text-white">Clique abaixo para ver mais detalhes.</p>
+        <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#conteudoCollapse" aria-expanded="false" aria-controls="conteudoCollapse">
+            Mostrar Mais
+        </button>
+        <div class="collapse mt-3" id="conteudoCollapse">
+            <div class="card card-body bg-dark text-white">
+                Kamen Rider Black Sun é uma série repleta de ação e aventura, trazendo a luta pela justiça...
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    
+
+
+    <!-- Seção Galeria (Carrossel) -->
+    <section class="galeria py-5">
+        <div class="container text-center">
+            <h1 class="fw-bold text-danger">Galeria de Kamen Rider Black Sun</h1>
+            <p class="lead text-white">Explore as imagens mais emocionantes da série Kamen Rider Black Sun.</p>
+
+            <!-- Carrossel -->
+            <div id="carouselGaleria" class="carousel slide" data-bs-ride="carousel" data-bs-interval="950">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <img src="img/fight.jpg" class="d-block w-100" alt="Cena de Kamen Rider Black Sun">
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <img src="img/blacksun.jpg" class="d-block w-100" alt="Cena de Kamen Rider Black Sun">
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <img src="img/shadow.jpg" class="d-block w-100" alt="Cena de Kamen Rider Black Sun">
+                    </div>
+                </div>
+                <!-- Controles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer --> 
+<footer class="rodape" style="background-image: url('img/redeyes.gif'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7);"></div>
+    <div class="container position-relative" style="z-index: 1;">
+        <div class="row p-5">
+            <div class="col-md-3 mt-3">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logotipo2.jpg" alt="Kamen Rider" width="100" height="44">
+                </a>
+                <p class="text-white">Kamen Rider Black Sun - A Lenda continua...</p>
+            </div>
+            <div class="col-md-3 mt-3">
+                <h3 class="fs-6 ms-3 text-danger">LINKS IMPORTANTES</h3>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link fw-lighter text-white" href="historia.html">A História</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-lighter text-white" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-lighter text-white" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 mt-3">
+                <h3 class="fs-6 ms-3 text-danger">CONTATO</h3>
+                <p class="fw-lighter text-white">Email: contato@kamenrider.com.br</p>
+                <p class="fw-lighter text-white">Telefone: (11) 1234-5678</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

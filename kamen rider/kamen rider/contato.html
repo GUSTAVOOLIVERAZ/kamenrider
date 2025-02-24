@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <style>
+        /* Garantir que o fundo de toda a página seja preto */
+        body {
+            background-color: #000000;
+            color: white;
+            padding-top: 80px; /* Ajuste o espaçamento superior para não sobrepor com a navbar fixa */
+        }
+
+        /* Garantir que a navbar tenha um fundo preto sólido */
+        .navbar.bg-dark {
+            background-color: #000000 !important; /* Garante o fundo 100% preto */
+        }
+
+        /* Alterar a cor do texto e ícones para garantir contraste */
+        .navbar-dark .navbar-nav .nav-link {
+            color: #f8f9fa; /* Cor branca para o texto */
+        }
+
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #f39c12; /* Cor amarela para o hover (quando o mouse passa por cima) */
+        }
+
+        /* Logo da navbar */
+        .navbar-brand img {
+            max-height: 44px;
+        }
+
+        /* Capa de Contato - ajustando o espaçamento */
+        .container.py-5.mt-5 {
+            padding-top: 150px; /* Ajuste do padding superior para afastar o conteúdo da navbar fixa */
+        }
+
+        /* Formulário de Contato */
+        .contato {
+            padding-top: 30px;
+        }
+
+        /* Ajustes no footer */
+        footer {
+            background-color: #000000;
+            color: white;
+            padding: 40px 0;
+        }
+
+        footer a {
+            color: #f8f9fa;
+        }
+
+        footer a:hover {
+            color: #f39c12;
+        }
+    </style>
+
+    <title>Contato - Kamen Rider Black Sun</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/background.jpg" alt="Kamen Rider Black Sun" width="100" height="44">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-danger fw-bolder" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-danger fw-bolder" href="historia.html">História</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-danger fw-bolder" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-danger fw-bolder" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Capa Contato -->
+    <div class="container py-5 mt-5">
+        <div class="row py-5 mt-5 text-center">
+            <div class="col-md-12 text-white">
+                <h1 class="fw-bold display-3">Entre em Contato</h1>
+                <p class="fs-4">Tem alguma dúvida ou mensagem? Estamos à disposição para responder!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de Contato -->
+    <section class="contato">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-danger">Informações de Contato</h2>
+                    <p class="text-danger">Email: <a href="mailto:contato@kamenrider.com.br" class="text-danger">contato@kamenrider.com.br</a></p>
+                    <p class="text-danger">Telefone: <strong>(11) 1234-5678</strong></p>
+                    <p class="text-danger">Endereço: Rua Exemplo, 123, São Paulo, SP</p>
+                    <p class="text-danger">Estamos disponíveis de segunda a sexta-feira, das 9h às 18h.</p>
+                </div>
+
+                <div class="col-md-6">
+                    <h2 class="text-danger">Formulário de Contato</h2>
+                    <form action="enviar_email.php" method="POST" class="text-white">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" name="nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="assunto" class="form-label">Assunto</label>
+                            <input type="text" class="form-control" id="assunto" name="assunto" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-danger">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="rodape">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-md-3 mt-3">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logotipo3.webp" alt="Kamen Rider" width="100" height="44">
+                    </a>
+                    <p class="text-white">Kamen Rider Black Sun - A Lenda continua...</p>
+                </div>
+                <div class="col-md-3 mt-3">
+                    <h3 class="fs-6 ms-3 text-danger">LINKS IMPORTANTES</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link fw-lighter text-white" href="historia.html">A História</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-lighter text-white" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-lighter text-white" href="loja.html">Loja</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mt-3">
+                    <h3 class="fs-6 ms-3 text-danger">CONTATO</h3>
+                    <p class="fw-lighter text-white">Email: contato@kamenrider.com.br</p>
+                    <p class="fw-lighter text-white">Telefone: (11) 1234-5678</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
